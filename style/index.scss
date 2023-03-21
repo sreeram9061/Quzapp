@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(212, 212, 212);
+}
+
+$normerlBlue:rgb(36, 75, 95);
+$lightBlue:rgb(90, 178, 221);
+$darkBlue: #141b33;
+$pink:rgb(200, 61, 85); 
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: $darkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card{
+        
+       display: flex;
+       justify-content: center;
+       
+        .informpage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+           
+
+           h2{
+            color: $pink;
+           }
+
+            label{
+                position: relative;
+                left: -230px;
+                top: -6px;
+                color: $pink;
+            }
+            
+            
+            #name,#emai{
+                width: 500px;
+                height: 40px;
+                border: 1px solid $normerlBlue;
+                outline: none;
+                background-color: #141b33;
+                padding: 0 5px;
+                transition: border ease .5s;
+                font-size: 17px;
+
+                &:hover{
+                    border: 1px solid $lightBlue;
+                    
+                }
+
+
+            }
+
+            #btn{
+                width: 120px;
+                height: 49px;
+                color:$normerlBlue;
+                border: 1px solid $normerlBlue;
+                transition: all ease-in-out .5s;
+                background: none;
+                font-size: 17px;
+
+                &:hover{
+                    border: 1px solid $lightBlue;
+                    color:$lightBlue ;
+                    border-radius: 20px;
+                }
+
+
+            }
+
+            h2,#name,#emai,#btn{
+                margin-bottom: 40px;
+            }
+
+           
+           
+            
+        }
+        .qustioncontainer{
+            display: none;
+            
+            flex-direction: column;
+            width: 535px;
+            height: 535px;
+            border: 1px solid $normerlBlue;
+            background-color: $darkBlue;
+            border-radius: 10px;
+            gap: 15px;
+            padding: 10px;
+            justify-content: center;
+
+
+            span{
+                display: flex;
+                height: 40px;
+                align-items: center;
+                gap: 5px;
+                position: relative;
+                left: 28px;
+                width: 200px;
+            }
+
+            #qustions{
+                text-align: center;
+                padding: 10px;
+            }
+
+            @mixin answerButton{
+                width: 220px;
+                    height: 50px;
+                    background-color: $darkBlue;
+                    border: 1px solid $normerlBlue;
+                    font-size: 17px;
+                    transition: all ease .5s;
+            }
+
+            .btncontainer1{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                #btncontainer1_btn1,#btncontainer1_btn2{
+                    @include answerButton;
+                    &:hover{
+                        border: 1px solid $lightBlue;
+                    }
+                }
+            }
+            .btncontainer2{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                #btncontainer2_btn1,#btncontainer2_btn2{
+                    @include answerButton;
+                    &:hover{
+                        border: 1px solid $lightBlue;
+                    }
+                }
+            } 
+
+            .nextbtn{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                #Qusit{
+                    width: 140px;
+                    height: 40px;
+                    background-color: $normerlBlue;
+                    border: none;
+                    p{
+                        color: $lightBlue;
+                    }
+
+
+                }
+                #next{
+                    width: 140px;
+                    height: 40px;
+                    background-color: $darkBlue;
+                    border: 1px solid $pink;
+                    font-size: 17px;
+                    p{
+                        color: $pink;
+                    }
+                    
+
+                }
+            }
+
+
+        }
+           
+
+
+
+    }
+
+    .thankyoumsg{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: $pink;
+        }
+        p{
+            color: $lightBlue;
+        }
+
+    }
+}
+

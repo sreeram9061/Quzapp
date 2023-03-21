@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgb(212, 212, 212);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141b33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  display: flex;
+  justify-content: center;
+}
+.container .card .informpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+.container .card .informpage h2 {
+  color: rgb(200, 61, 85);
+}
+.container .card .informpage label {
+  position: relative;
+  left: -230px;
+  top: -6px;
+  color: rgb(200, 61, 85);
+}
+.container .card .informpage #name, .container .card .informpage #emai {
+  width: 500px;
+  height: 40px;
+  border: 1px solid rgb(36, 75, 95);
+  outline: none;
+  background-color: #141b33;
+  padding: 0 5px;
+  transition: border ease 0.5s;
+  font-size: 17px;
+}
+.container .card .informpage #name:hover, .container .card .informpage #emai:hover {
+  border: 1px solid rgb(90, 178, 221);
+}
+.container .card .informpage #btn {
+  width: 120px;
+  height: 49px;
+  color: rgb(36, 75, 95);
+  border: 1px solid rgb(36, 75, 95);
+  transition: all ease-in-out 0.5s;
+  background: none;
+  font-size: 17px;
+}
+.container .card .informpage #btn:hover {
+  border: 1px solid rgb(90, 178, 221);
+  color: rgb(90, 178, 221);
+  border-radius: 20px;
+}
+.container .card .informpage h2, .container .card .informpage #name, .container .card .informpage #emai, .container .card .informpage #btn {
+  margin-bottom: 40px;
+}
+.container .card .qustioncontainer {
+  display: none;
+  flex-direction: column;
+  width: 535px;
+  height: 535px;
+  border: 1px solid rgb(36, 75, 95);
+  background-color: #141b33;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+}
+.container .card .qustioncontainer span {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  left: 28px;
+  width: 200px;
+}
+.container .card .qustioncontainer #qustions {
+  text-align: center;
+  padding: 10px;
+}
+.container .card .qustioncontainer .btncontainer1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container .card .qustioncontainer .btncontainer1 #btncontainer1_btn1, .container .card .qustioncontainer .btncontainer1 #btncontainer1_btn2 {
+  width: 220px;
+  height: 50px;
+  background-color: #141b33;
+  border: 1px solid rgb(36, 75, 95);
+  font-size: 17px;
+  transition: all ease 0.5s;
+}
+.container .card .qustioncontainer .btncontainer1 #btncontainer1_btn1:hover, .container .card .qustioncontainer .btncontainer1 #btncontainer1_btn2:hover {
+  border: 1px solid rgb(90, 178, 221);
+}
+.container .card .qustioncontainer .btncontainer2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container .card .qustioncontainer .btncontainer2 #btncontainer2_btn1, .container .card .qustioncontainer .btncontainer2 #btncontainer2_btn2 {
+  width: 220px;
+  height: 50px;
+  background-color: #141b33;
+  border: 1px solid rgb(36, 75, 95);
+  font-size: 17px;
+  transition: all ease 0.5s;
+}
+.container .card .qustioncontainer .btncontainer2 #btncontainer2_btn1:hover, .container .card .qustioncontainer .btncontainer2 #btncontainer2_btn2:hover {
+  border: 1px solid rgb(90, 178, 221);
+}
+.container .card .qustioncontainer .nextbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container .card .qustioncontainer .nextbtn #Qusit {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(36, 75, 95);
+  border: none;
+}
+.container .card .qustioncontainer .nextbtn #Qusit p {
+  color: rgb(90, 178, 221);
+}
+.container .card .qustioncontainer .nextbtn #next {
+  width: 140px;
+  height: 40px;
+  background-color: #141b33;
+  border: 1px solid rgb(200, 61, 85);
+  font-size: 17px;
+}
+.container .card .qustioncontainer .nextbtn #next p {
+  color: rgb(200, 61, 85);
+}
+.container .thankyoumsg {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .thankyoumsg h1 {
+  color: rgb(200, 61, 85);
+}
+.container .thankyoumsg p {
+  color: rgb(90, 178, 221);
+}/*# sourceMappingURL=index.css.map */

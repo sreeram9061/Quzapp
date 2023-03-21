@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/mediaQuery.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="informpage">
+                <h2>Welcome</h2>
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                
+                <label for="emai">Email</label>
+                <input id="emai" type="email">
+
+                <button id="btn"> Next <i class="fa-duotone fa-chevrons-right"></i> </button>
+            </div>
+
+            <div class="qustioncontainer" >
+                <span><p>Qstion</p><h3 id="qustionnumber"></h3></span>
+
+                <p id="qustions"></p>
+                <div class="btncontainer1">
+                    <button id="btncontainer1_btn1" name="a"></button>
+                    <button id="btncontainer1_btn2" name="b"></button>
+                </div>
+                <div class="btncontainer2">
+                    <button id="btncontainer2_btn1" name="c"></button>
+                    <button id="btncontainer2_btn2" name="d"></button>
+                </div>
+
+                <div class="nextbtn">
+                    <button id="Qusit"><p>Quit</p></button>
+                    <button id="next"><p>Next</p></button>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        <div class="thankyoumsg">
+            <h1>Thank You</h1>
+        <p>your result would be reach your email without late</p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
