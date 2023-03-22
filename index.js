@@ -233,13 +233,15 @@ function getData(){
 
 function creactTable(result){
     const table=document.getElementById('tableName')
+    const tbody =document.createElement('tbody')
     const tr =document.createElement('tr')
     result.forEach(e=>{
         const td =document.createElement('td')
         const node = document.createTextNode(e);
         td.appendChild(node)
         tr.appendChild(td)
+        tbody.appendChild(tr)
     })
-    table.appendChild(tr)
+    table.appendChild(tbody)
 
 }
