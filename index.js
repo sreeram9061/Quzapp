@@ -23,46 +23,46 @@ const Qstions=[
         d:'8',
         right:'b'
     },
- //{
- //    qustion:'How is first primeminister of india',
- //    a:'indira gandhi',
- //    b:'Mahatma gandhi',
- //    c:'Jawaharlal Nehru',
- //    d:'rahul gandhi',
- //    right:'c'
- //},
- //{
- //    qustion:"How many times does concerning, the clock's hands coincide in a day?",
- //    a:'24 Times',
- //    b:'16 Times',
- //    c:'34 Times',
- //    d:'22 Times',
- //    right:'d'
- //},
- //{
- //    qustion:'How is first primeminister of india',
- //    a:'indira gandhi',
- //    b:'Mahatma gandhi',
- //    c:'Jawaharlal Nehru',
- //    d:'rahul gandhi',
- //    right:'c'
- //},
- //{
- //    qustion:"Where is the Keshopur Ramsar Site situated?",
- //    a:'Punjab',
- //    b:'Kerala',
- //    c:'Tamilnadu',
- //    d:'Delhi',
- //    right:'a'
- //},
- //{
- //    qustion:'What is the total number of members in BIMSTEC?',
- //    a:'9',
- //    b:'7',
- //    c:'2',
- //    d:'8',
- //    right:'b'
- //},
+ {
+     qustion:'How is first primeminister of india',
+     a:'indira gandhi',
+     b:'Mahatma gandhi',
+     c:'Jawaharlal Nehru',
+     d:'rahul gandhi',
+     right:'c'
+ },
+ {
+     qustion:"How many times does concerning, the clock's hands coincide in a day?",
+     a:'24 Times',
+     b:'16 Times',
+     c:'34 Times',
+     d:'22 Times',
+     right:'d'
+ },
+ {
+     qustion:'How is first primeminister of india',
+     a:'indira gandhi',
+     b:'Mahatma gandhi',
+     c:'Jawaharlal Nehru',
+     d:'rahul gandhi',
+     right:'c'
+ },
+ {
+     qustion:"Where is the Keshopur Ramsar Site situated?",
+     a:'Punjab',
+     b:'Kerala',
+     c:'Tamilnadu',
+     d:'Delhi',
+     right:'a'
+ },
+ {
+     qustion:'What is the total number of members in BIMSTEC?',
+     a:'9',
+     b:'7',
+     c:'2',
+     d:'8',
+     right:'b'
+ },
    
     
     
@@ -225,6 +225,21 @@ function getData(){
        
    }
    console.log(`${True} ${False}`) 
+   let resultArray=[UserDetails[0].name,UserDetails[0].email,True,False,Qstions.length]
+   
+   creactTable(resultArray)
 } 
 
 
+function creactTable(result){
+    const table=document.getElementById('tableName')
+    const tr =document.createElement('tr')
+    result.forEach(e=>{
+        const td =document.createElement('td')
+        const node = document.createTextNode(e);
+        td.appendChild(node)
+        tr.appendChild(td)
+    })
+    table.appendChild(tr)
+
+}
